@@ -6,26 +6,26 @@
 
 - Tải Anaconda tại https://www.anaconda.com/download
 - Next cho đến khi đến mục _**Advanced Installation Options**_ chọn _**Add Anaconda3 to my PATH environment**_
-  ![[Buổi 1 Ảnh 1.png]]
+  ![Buổi 1 Ảnh 1.png](Buổi%201%20Ảnh%201.png)
 - Trước khi _**Finish**_ thì ta bỏ chọn _**Getting Started with Anaconda Distribution**_
-  ![[Buổi 1 Ảnh 2.png]]
+  ![Buổi 1 Ảnh 2.png](Buổi%201%20Ảnh%202.png)
 
 #### Tạo môi trường với Anaconda
 
 ##### Cách 1: Sử dụng Anaconda Navigator
 
 - Mở **_Anaconda Navigator_** và chọn phần _**Environment**_
-  ![[Buổi 1 Ảnh 3.png]]
+  ![Buổi 1 Ảnh 3.png](Buổi%201%20Ảnh%203.png)
 - Chọn _**Create**_
-  ![[Buổi 1 Ảnh 4.png]]
+  ![Buổi 1 Ảnh 4.png](Buổi%201%20Ảnh%204.png)
 - Đặt tên cho môi trường và phiên bản Python
-  ![[Buổi 1 Ảnh 5.png]]
+  ![Buổi 1 Ảnh 5.png](Buổi%201%20Ảnh%205.png)
 - Chọn _**Create**_ để tạo môi trường
 
 ##### Cách 2: Sử dụng Conda CLI
 
 - Mở _**Terminal**_ bất kì nào
-  ![[Buổi 1 Ảnh 6.png]]
+  ![Buổi 1 Ảnh 6.png](Buổi%201%20Ảnh%206.png)
 - Gõ theo cú pháp sau để tạo môi trường
 
 ```
@@ -33,7 +33,7 @@ conda create --name <tên môi trường>
 ```
 
 Ví dụ: `conda create --name demo`
-![[Buổi 1 Ảnh 7.png]]
+![Buổi 1 Ảnh 7.png](Buổi%201%20Ảnh%207.png)
 
 #### Sử dụng môi trường cho việc lập trình
 
@@ -70,7 +70,7 @@ conda activate <tên môi trường>
 ```
 
 Khi ta đang sử dụng môi trường thì sẽ có tên môi trường ở bên cạnh
-![[Buổi 1 Ảnh 8.png]]
+![Buổi 1 Ảnh 8.png](Buổi%201%20Ảnh%208.png)
 
 - Để chạy chường trình python thì dùng lệnh
 
