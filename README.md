@@ -8,7 +8,7 @@
 
 ### 1.3. Thực hành với các bài tập đơn giản
 
-## Buổi 2: Xử lý dữ liệu với NumPy và Pandas
+## [Buổi 2: Xử lý dữ liệu với NumPy và Pandas](Buổi%202.md)
 
 ### 2.1. Làm việc với mảng và ma trận trong NumPy
 
@@ -17,5 +17,7 @@
 ### 2.3. Thao tác cơ bản với hình ảnh
 
 ## Buổi 3:Trích xuất đặc trưng hình ảnh và tiền xử lý
+
 ## Buổi 4:Xây dựng và huấn luyện mô hình
+
 ## Buổi 5:Hoàn thiện dự án và triển khai ứng dụng
