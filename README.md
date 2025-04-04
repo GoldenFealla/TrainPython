@@ -1,6 +1,6 @@
 # Documentation
 
-## [Buổi 1: Cơ bản về Python và môi trường làm việc](Buổi%201.md)
+## [Buổi 1: Cơ bản về Python và môi trường làm việc](Buổi%201/Buổi%201.md)
 
 ### 1.1 Cài đặt Anaconda và Jupyter Notebook
 
@@ -8,7 +8,7 @@
 
 ### 1.3. Thực hành với các bài tập đơn giản
 
-## [Buổi 2: Xử lý dữ liệu với NumPy và Pandas](Buổi%202.md)
+## [Buổi 2: Xử lý dữ liệu với NumPy và Pandas](Buổi%202/Buổi%202.md)
 
 ### 2.1. Làm việc với mảng và ma trận trong NumPy
 

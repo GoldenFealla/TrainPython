@@ -160,7 +160,9 @@ print(describe_food("Sushi"))  # Sử dụng giá trị mặc định
 
 ### 1.3. Thực hành với các bài tập đơn giản
 
-- Tạo một danh sách 5 loại thức ăn khác nhau
-- Viết hàm kiểm tra xem một món ăn có phải là pizza không
-- Viết vòng lặp để kiểm tra từng món trong danh sách
-- Tính số lượng pizza trong danh sách
+- Bài 1: Tính tổng các số từ 1 đến n (không dùng hàm sum())
+- Bài 2: Kiểm tra số nguyên tố
+- Bài 3: Tính giai thừa
+- Bài 4: Đếm số lần xuất hiện của từng ký tự trong chuỗi
+- Bài 5: Tìm số lớn nhất và nhỏ nhất trong danh sách (không dùng min/max)
+- Bài 6: Tính tổng và trung bình của danh sách
