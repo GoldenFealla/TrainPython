@@ -74,6 +74,8 @@ print(np.min(normal_array))   # Giá trị nhỏ nhất
 # > 1
 ```
 
+Danh sách các phương thức hay sử dụng: [Danh sách](./np_common.md)
+
 ### 2.2. Xử lý dữ liệu với Pandas
 
 #### Cài đặt PandasNumpy
