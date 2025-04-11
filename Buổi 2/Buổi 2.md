@@ -1,6 +1,6 @@
 ## Buổi 2: Xử lý dữ liệu với NumPy và Pandas
 
-### 2.1. Làm việc với mảng và ma trận trong NumPy
+### <span style="color:darkblue">2.1. Làm việc với mảng và ma trận trong NumPy</span>
 
 #### Cài đặt Numpy
 
@@ -76,7 +76,7 @@ print(np.min(normal_array))   # Giá trị nhỏ nhất
 
 Danh sách các phương thức hay sử dụng: [Danh sách](./np_common.md)
 
-### 2.2. Xử lý dữ liệu với Pandas
+### <span style="color:darkblue">2.2. Xử lý dữ liệu với Pandas</span>
 
 #### Cài đặt PandasNumpy
 
@@ -155,7 +155,7 @@ print(df['price'].max())     # Giá cao nhất
 # > 12
 ```
 
-### 2.3. Thao tác cơ bản với hình ảnh
+### <span style="color:darkblue">2.3. Thao tác cơ bản với hình ảnh</span>
 
 #### Cài đặt matplotlib
 
@@ -243,3 +243,352 @@ plt.show()
 
 Kết quả:
 ![Buổi 2 Ảnh 3.png](Buổi%202%20Ảnh%203.png)
+
+### 2.4. Thực hành với các bài tập đơn giản
+
+- **Bài tập với numpy**
+
+  - Dùng numpy tạo mảng `[3, 6, 2, 9, 7, 2]` và hoàn thành các yêu cầu sau:
+
+    - Tìm số nhỏ nhất, lớn nhất trong mảng
+    - Tính tổng mảng
+    - Tính trung bình mảng
+    - Sắp xếp mảng
+
+    <details>
+      <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+
+    # 0. Tạo mảng NumPy từ danh sách
+    list = [3, 6, 2, 9, 7, 2]
+    data = np.array(list)
+
+    # 1. Tìm giá trị lớn nhất và nhỏ nhất trong mảng
+    min_value = np.min(data)
+    max_value = np.max(data)
+
+    print("Min value:", min_value)  # Min value: 2
+    print("Max value:", max_value)  # Max value: 9
+
+    # 2. Tính tổng phần tử trong mảng
+    sum_value = np.sum(data)
+    print("Sum value:", sum_value)  # Sum value: 29
+
+    # 3. Tính trung bình cộng của các phần tử trong mảng
+    mean_value = np.mean(data)
+    print("Mean value:", mean_value)  # Mean value: 4.833333333333333
+
+    # 4 Sắp xếp mảng theo thứ tự tăng dần
+    sorted_data = np.sort(data)
+    print("Sorted data:", sorted_data)  # Sorted data: [2 2 3 6 7 9]
+    ```
+
+    </details>
+
+  - Dùng numpy tạo một mảng ngẫu nhiên với kích thước 3x4 và hoàn thành các yêu cầu sau:
+
+    - Tính tích vô hướng
+    - Chuyển vị ma trận
+
+    <details>
+      <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+    ```
+
+    </details>
+
+  - Dùng numpy tạo hai mảng `[1, 2, 3]`, `[4, 5, 6]` và hoàn thành các yêu cầu sau:
+
+    - Nối hai mảng thành một mảng
+    - Tách mảng vừa nối thành ba mảng
+
+    <details>
+      <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+    ```
+
+    </details>
+
+- **Bài tập với pandas**
+
+  - Dùng data sau
+
+  ```python
+  data = {
+    'food': ['pizza', 'burger', 'pizza', 'salad', 'pasta', 'sushi', 'burger', 'pizza', 'steak', 'sandwich', 'pasta', 'burger', 'pizza', 'salad', 'pasta'],
+    'price': [10, 8, 12, 7, 9, 15, 12, 15, 22, 7, 11, 9, 8, 9, 14],
+    'calories': [300, 250, 320, 100, 280, 220, 400, 350, 450, 280, 320, 280, 290, 150, 400],
+    'is_italian': [True, False, True, False, True, False, False, True, False, False, True, False, True, False, True]
+  }
+  ```
+
+  - Tạo dataframe dừ data trên
+  - In ra danh sách đồ ăn là pizza
+  - In ra danh sách đồ ăn không phải là burger
+  - In ra dach sách đồ ăn có giá trên 8
+  - In ra danh sách đồ ăn có calories nhỏ hơn 200
+  - In ra danh sách đồ ăn là món Ý
+
+  <details>
+    <summary style="color:green;font-weight:bold">Solution</summary>
+
+  ```python
+  import pandas as pd
+  import numpy as np
+
+  data = {
+      'food': ['pizza', 'burger', 'pizza', 'salad', 'pasta', 'sushi', 'burger', 'pizza', 'steak', 'sandwich', 'pasta', 'burger', 'pizza', 'salad', 'pasta'],
+      'price': [10, 8, 12, 7, 9, 15, 12, 15, 22, 7, 11, 9, 8, 9, 14],
+      'calories': [300, 250, 320, 100, 280, 220, 400, 350, 450, 280, 320, 280, 290, 150, 400],
+      'is_italian': [True, False, True, False, True, False, False, True, False, False, True, False, True, False, True]
+  }
+
+  # 1. Tạo dataframe dừ data trên
+  df = pd.DataFrame(data)
+  print("\nDataFrame: \n", df)
+
+  # 2. In ra danh sách đồ ăn là pizza
+  pizza = df[df['food'] == 'pizza']
+  print("\nPizza: \n", pizza)
+
+  # 3. In ra danh sách đồ ăn không phải là burger
+  not_burger = df[df['food'] != 'burger']
+  print("\nNot Burger: \n", not_burger)
+
+  # 4. In ra dach sách đồ ăn có giá trên 8
+  price = df[df['price'] > 8]
+  print("\nPrice: \n", price)
+
+  # 5. In ra danh sách đồ ăn có calories nhỏ hơn 200
+  calories = df[df['calories'] < 200]
+  print("\nCalories: \n", calories)
+
+  # 6. In ra danh sách đồ ăn là món Ý
+  italian = df[df['is_italian'] == True]
+  italian = italian.drop_duplicates(subset=['food'])
+  print("\nItalian: \n", italian)
+  ```
+
+  </details>
+
+- **Bài tập với ảnh (Không bắt buộc)**
+
+  - Dùng ảnh `pizza.jpg` đã cho hãy điều chỉnh ảnh theo yêu cầu sau (Dùng sườn code bên dưới)
+
+    - Cài đặt `matplotlib` trước khi sử dụng
+
+    ```
+    conda install matplotlib
+    ```
+
+    - Sườn code
+
+    ```python
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from PIL import Image
+
+    # Đọc hình ảnh (cần chuẩn bị một hình pizza)
+    img = Image.open('pizza.jpg')
+
+    # Chuyển về mảng NumPy
+    img_array = np.array(img)
+    adjusted_img = img_array.copy()
+
+    # Điều chỉnh ảnh theo yêu cầu đề bài bắt cách dùng biến adjusted_img
+    # Điều chỉnh ở đây
+
+    # Hiển thị hình ảnh gốc và hình ảnh đã điều chỉnh
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.title('Adjusted Image')
+    plt.imshow(adjusted_img)
+    plt.axis('off')
+    plt.subplot(1, 2, 2)
+    plt.title('Original Image')
+    plt.imshow(img_array)
+    plt.axis('off')
+    plt.show()
+    ```
+
+    > Gợi ý: Một pixel màu là 8bit. Tương đương có 256 giá trị. Những màu có giá trị cao hơn ở giữa sẽ càng cao và ngược lại
+
+  - Tăng độ sáng (Brightness) ảnh lên 50%
+    <details>
+
+    <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from PIL import Image
+
+    # Đọc hình ảnh (cần chuẩn bị một hình pizza)
+    img = Image.open('pizza.jpg')
+
+    # Chuyển về mảng NumPy
+    img_array = np.array(img)
+    adjusted_img = img_array.copy()
+
+    # Điều chỉnh ảnh theo yêu cầu đề bài bắt cách dùng biến adjusted_img
+    # Điều chỉnh ở đây
+    adjusted_img = np.clip(np.dot(adjusted_img, 1.5), 0, 255).astype(np.uint8)
+
+    # Hiển thị hình ảnh gốc và hình ảnh đã
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.title('Adjusted Image')
+    plt.imshow(adjusted_img)
+    plt.axis('off')
+    plt.subplot(1, 2, 2)
+    plt.title('Original Image')
+    plt.imshow(img_array)
+    plt.axis('off')
+    plt.show()
+    ```
+
+    </details>
+
+  - Giảm tương phản (Contrast) ảnh xuống 25%
+
+    > Gợi ý: Để giảm tương phản thì giá trị màu của pixel nào sáng thì càng sáng, tối thì càng tối. Lấy giá trị 128 làm cột mốc sáng tối của pixcel
+
+    <details>
+
+    <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from PIL import Image
+
+    # Đọc hình ảnh (cần chuẩn bị một hình pizza)
+    img = Image.open('pizza.jpg')
+
+    # Chuyển về mảng NumPy
+    img_array = np.array(img)
+    adjusted_img = img_array.copy()  # Chuyển đổi sang kiểu float32 để tránh tràn số nguyên
+
+    # Điều chỉnh ảnh theo yêu cầu đề bài bắt cách dùng biến adjusted_img
+    # Điều chỉnh ở đây
+    middle_color = 128.
+
+    adjusted_img = adjusted_img.astype(np.float32)
+    adjusted_img = np.clip(middle_color + 0.75 * (img_array - middle_color), 0, 255).astype(np.uint8)
+
+    # Hiển thị hình ảnh gốc và hình ảnh đã điều chỉnh
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.title('Adjusted Image')
+    plt.imshow(adjusted_img)
+    plt.axis('off')
+    plt.subplot(1, 2, 2)
+    plt.title('Original Image')
+    plt.imshow(img_array)
+    plt.axis('off')
+    plt.show()
+    ```
+
+    </details>
+
+  - Tăng độ bão hòa (Saturation) ảnh lên 35%
+
+    > Gợi ý: Để tăng màu sắc hay con gọi độ bảo hòa thì ta cần giảm bớt giá trị đen trắng (greyscale?)
+
+    <details>
+
+    <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from PIL import Image
+
+    # Đọc hình ảnh (cần chuẩn bị một hình pizza)
+    img = Image.open('pizza.jpg')
+
+    # Chuyển về mảng NumPy
+    img_array = np.array(img)
+    adjusted_img = img_array.copy()
+
+    # Điều chỉnh ảnh theo yêu cầu đề bài bắt cách dùng biến adjusted_img
+    # Điều chỉnh ở đây
+    if len(img_array.shape) == 3:  # RGB image
+        adjusted_img = np.mean(img_array, axis=2, keepdims=True)
+        adjusted_img = np.dot(img_array, 2) + np.dot(adjusted_img, 1 - 2)
+        adjusted_img = np.clip(adjusted_img, 0, 255).astype(np.uint8)
+
+    # Hiển thị hình ảnh gốc và hình ảnh đã điều chỉnh
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.title('Adjusted Image')
+    plt.imshow(adjusted_img)
+    plt.axis('off')
+    plt.subplot(1, 2, 2)
+    plt.title('Original Image')
+    plt.imshow(img_array)
+    plt.axis('off')
+    plt.show()
+    ```
+
+    </details>
+
+  - Làm mờ ảnh đi 20%
+
+    > Gợi ý: Làm mờ ảnh bằng cách tính giá trị trung bình của vị trí của từng pixels trong bán kính cho trước.
+    >
+    > - Vòng vàng là pixel hiện tại cần tính
+    > - Vòng đỏ là vùng để tính giá trị trung bình cho pixcel hiện tại
+
+    ![how-simple-blue-work.gif](./how-simple-blue-work.gif)
+
+    <details>
+
+    <summary style="color:green;font-weight:bold">Solution</summary>
+
+    ```python
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from PIL import Image
+
+    # Đọc hình ảnh (cần chuẩn bị một hình pizza)
+    img = Image.open('pizza.jpg')
+
+    # Chuyển về mảng NumPy
+    img_array = np.array(img)
+    adjusted_img = img_array.copy()
+
+    # Điều chỉnh ảnh theo yêu cầu đề bài bắt cách dùng biến adjusted_img
+    # Điều chỉnh ở đây
+    adjusted_img = img_array.copy()
+    height, width, channels = img_array.shape
+    # Kích thước ô vuông để tính trung bình
+    pad = 5
+
+    # Lặp từng pixel
+    for y in range(pad, height - pad):
+        for x in range(pad, width - pad):
+            # Lặp từng chanel màu (R, G, B)
+            for c in range(channels):
+                adjusted_img[y, x, c] = np.mean(img_array[y - pad:y + pad + 1, x - pad:x + pad + 1, c])
+
+    # Hiển thị hình ảnh gốc và hình ảnh đã điều chỉnh
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    plt.title('Adjusted Image')
+    plt.imshow(adjusted_img)
+    plt.axis('off')
+    plt.subplot(1, 2, 2)
+    plt.title('Original Image')
+    plt.imshow(img_array)
+    plt.axis('off')
+    plt.show()
+    ```
+
+    </details>

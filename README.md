@@ -16,6 +16,8 @@
 
 ### 2.3. Thao tác cơ bản với hình ảnh
 
+### 2.4. Thực hành với các bài tập
+
 ## Buổi 3:Trích xuất đặc trưng hình ảnh và tiền xử lý
 
 ## Buổi 4:Xây dựng và huấn luyện mô hình
