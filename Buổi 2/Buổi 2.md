@@ -167,7 +167,7 @@ conda install conda-forge::matplotlib
 
 #### Thao tác với hình ảnh
 
-[Tải ảnh tại đây](https://github.com/GoldenFealla/TrainPython/blob/master/pizza.jpg)
+[Tải ảnh tại đây](https://github.com/GoldenFealla/TrainPython/blob/master/Buổi%202/pizza.jpg)
 
 - Hiện thị ảnh lên màn hình
 
