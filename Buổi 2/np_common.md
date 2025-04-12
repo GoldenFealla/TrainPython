@@ -120,7 +120,7 @@ print("\nResult start 0, stop 10, step 3:\n", sequence)
     Result start 0, stop 10, step 2:
      [0 2 4 6 8]
     
-    Result start 0, stop 10, step 2:
+    Result start 0, stop 10, step 3:
      [0 3 6 9]
     
 
@@ -177,22 +177,22 @@ print("\nResult three dimension:\n", random_array)
 
     
     Result one dimension:
-     [0.17065352 0.61857501 0.49997405]
+     [0.41706694 0.07180418 0.95508263]
     
     Result two dimension:
-     [[0.07578904 0.58402761]
-     [0.39323379 0.831058  ]
-     [0.83480522 0.172774  ]]
+     [[0.60260285 0.47723412]
+     [0.91102565 0.97160214]
+     [0.92288556 0.96933307]]
     
     Result three dimension:
-     [[[0.09499147 0.79761075 0.1720163  0.79778598]
-      [0.97018009 0.05978156 0.90790077 0.46183134]]
+     [[[0.69920785 0.48766293 0.15931375 0.97965459]
+      [0.56341049 0.82458469 0.81873833 0.37131036]]
     
-     [[0.5676455  0.64201734 0.33746997 0.39388645]
-      [0.6687082  0.95150874 0.5661078  0.88946219]]
+     [[0.91056969 0.67612977 0.55785386 0.43673449]
+      [0.17554991 0.03888842 0.7972759  0.78916292]]
     
-     [[0.74422573 0.76759907 0.92056626 0.23513927]
-      [0.91391184 0.29818987 0.04744017 0.39500184]]]
+     [[0.59205309 0.87995795 0.26038588 0.62817195]
+      [0.75912537 0.25029342 0.39119964 0.45556765]]]
     
 
 # 7. np.mean() - Tính trung bình của mảng
@@ -211,7 +211,7 @@ print("\nResult:", mean_value)
 ```
 
     
-    np.mean(): 3.0
+    Result: 3.0
     
 
 # 8. np.median() - Tìm phần tử có giá trị nằm giữa
@@ -429,4 +429,25 @@ print("Result:", split_result)
     
     Original: [0 1 2 3 4 5 6 7 8]
     Result: [array([0, 1, 2]), array([3, 4, 5]), array([6, 7, 8])]
+    
+
+# 18. np.clip() - Giới hạn giá trị trong mảng
+- Được dùng để giới giạn giá trị trong khoảng cho phép. Nếu giá trị nhỏ/lớn hơn khoảng cho phép, thì giá trị đó sẽ có giá trị nhỏ nhất/lớn nhất tương ứng
+
+Documentation: [numpy.clip](https://numpy.org/doc/stable/reference/generated/numpy.clip.html)
+
+
+```python
+import numpy as np
+
+array_to_clip = np.array([2, 11, -1, -4, 12, 3, 6, 15, 4, -2])
+clipped_array = np.clip(array_to_clip, 0, 10) # giới hạn giá trị từ 0, 10
+
+print("\nOriginal:", array_to_clip)
+print("Result:", clipped_array)
+```
+
+    
+    Original: [ 2 11 -1 -4 12  3  6 15  4 -2]
+    Result: [ 2 10  0  0 10  3  6 10  4  0]
     
