@@ -546,7 +546,7 @@ Kết quả:
     > - Vòng vàng là pixel hiện tại cần tính
     > - Vòng đỏ là vùng để tính giá trị trung bình cho pixcel hiện tại
 
-    ![how-simple-blue-work.gif](./how-simple-blue-work.gif)
+    ![how-simple-blue-work.gif](./how-simple-blur-work.gif)
 
     <details>
 
