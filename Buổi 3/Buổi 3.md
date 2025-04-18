@@ -38,12 +38,19 @@
 - Tải Dataset tại đây: [Kaggle](https://www.kaggle.com/datasets/carlosrunner/pizza-not-pizza)
 
   - Đăng nhập vào Kaggle
+
     ![Đăng nhập](Buổi%203%20Ảnh%201.png)
+
   - Chọn phương thức đăng nhập (Chọn phương án bất kỳ, ở đây chọn Google cho tiện)
+
     ![Phương thức đăng nhập](Buổi%203%20Ảnh%202.png)
+
   - Tải về Dataset
+
     ![Tải về Dataset](Buổi%203%20Ảnh%203.png)
+
   - Chọn tải "Download Dataset as zip"
+
     ![Tải về File zip](Buổi%203%20Ảnh%204.png)
 
 ### Thiết lập Môi trường
@@ -54,18 +61,29 @@
 - Tạo Project và môi trường
 
   - Tạo một thư mục để chưa Project (Ở đây của mình là `F:\Code\Python\PizzaClassifier`)
+
     ![Tạo thư mục](Buổi%203%20Ảnh%205.png)
+
   - Mở Visual Studio Code tại thư mục vừa tạo
+
     ![Mở thư mục bằng VSCode 1](Buổi%203%20Ảnh%206.png)
+
     ![Mở thư mục bằng VSCode 2](Buổi%203%20Ảnh%207.png)
+
   - Mở Terminal trong Visual Studio Code
+
     ![Mở Terminal trong VSCode 1](Buổi%203%20Ảnh%208.png)
+
     ![Mở Terminal trong VSCode 2](Buổi%203%20Ảnh%209.png)
+
   - Tạo môi trường với Python 3.12 (Pytorch chưa hỗ trợ Python 3.13 hiện tại)
+
     ```
     conda create --name PizzaClassifier python=3.12
     ```
+
     ![Tạo môi trường](Buổi%203%20Ảnh%2010.gif)
+
   - Activate Môi trường trước khi cài đặt Pytorch
 
     ```
@@ -94,7 +112,9 @@
   > Khuyến khích sử dụng GPU để tăng hiệu suất Training
 
   - Tạo một file tên bất kỳ (Ở đây là `main.py`) để test Pytorch
+
     ![Tạo file](Buổi%203%20Ảnh%2013.png)
+
   - Sử dụng code sau để kiểm tra xem Pytorch có thể sử dụng được GPU không?
 
     ```python
@@ -114,8 +134,11 @@
     ```
 
     - Nếu chỉ cài bình thường không có cài Cuda
+
       ![Test Pytorch 1](Buổi%203%20Ảnh%2015.gif)
+
     - Nếu có cài Cuda thì kết quả sẽ như này
+
       ![Test Pytorch 2](Buổi%203%20Ảnh%2016.png)
 
     > [!NOTE]
