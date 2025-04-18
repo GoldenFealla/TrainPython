@@ -31,6 +31,7 @@
 ## 3.2. Chuẩn bị Dataset, Environment
 
 > [!NOTE]
+>
 > Trong quá trình cài đặt trong Buổi này, bản hướng dẫn sử dụng [Conda](https://anaconda.org/) làm trình quản lý môi trường và Sử dụng [Visual Studio Code](https://code.visualstudio.com/) để làm trình Code Editor.
 
 ### Chuẩn bị Dataset
@@ -56,6 +57,7 @@
 ### Thiết lập Môi trường
 
 > [!NOTE]
+>
 > Nếu bạn chưa có Conda thì xem lại [Buổi 1](/Buổi%201/Buổi%201.md)
 
 - Tạo Project và môi trường
@@ -109,6 +111,7 @@
     ![Cài đặt Pytorch](Buổi%203%20Ảnh%2012.gif)
 
   > [!NOTE]
+  >
   > Khuyến khích sử dụng GPU để tăng hiệu suất Training
 
   - Tạo một file tên bất kỳ (Ở đây là `main.py`) để test Pytorch
@@ -142,6 +145,7 @@
       ![Test Pytorch 2](Buổi%203%20Ảnh%2016.png)
 
     > [!NOTE]
+    >
     > Nếu lỡ cài bằng lệnh chỉ cho CPU thì cài bài có GPU bằng cách gỡ `torch` `torchvision` `torchaudio` bằng lệnh:
     >
     > ```
