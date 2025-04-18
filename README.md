@@ -18,8 +18,12 @@
 
 ### 2.4. Thực hành với các bài tập
 
-## Buổi 3:Trích xuất đặc trưng hình ảnh và tiền xử lý
+## Buổi 3: [Giới thiệu về AI và Chuẩn bị Dataset, Environment](Buổi%203/Buổi%203.md)
 
-## Buổi 4:Xây dựng và huấn luyện mô hình
+### 3.1. Giới thiệu về AI
 
-## Buổi 5:Hoàn thiện dự án và triển khai ứng dụng
+### 3.2. Chuẩn bị Dataset, Environment
+
+## Buổi 4: Xây dựng mô hình và huấn luyện
+
+## Buổi 5: Đánh giá mô hình và dự đoán

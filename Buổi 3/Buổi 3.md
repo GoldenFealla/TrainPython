@@ -1,8 +1,3 @@
-<style>
-h2,h3{color:SteelBlue !important;}
-strong em{color:Red !important}
-</style>
-
 # Buổi 3: Giới thiệu về AI và Chuẩn bị Dataset, Environment
 
 ## 3.1. Giới thiệu về AI
@@ -95,7 +90,7 @@ strong em{color:Red !important}
 
     ![Cài đặt Pytorch](Buổi%203%20Ảnh%2012.gif)
 
-  > ![NOTE]
+  > [!NOTE]
   > Khuyến khích sử dụng GPU để tăng hiệu suất Training
 
   - Tạo một file tên bất kỳ (Ở đây là `main.py`) để test Pytorch
@@ -123,7 +118,7 @@ strong em{color:Red !important}
     - Nếu có cài Cuda thì kết quả sẽ như này
       ![Test Pytorch 2](Buổi%203%20Ảnh%2016.png)
 
-    > ![NOTE]
+    > [!NOTE]
     > Nếu lỡ cài bằng lệnh chỉ cho CPU thì cài bài có GPU bằng cách gỡ `torch` `torchvision` `torchaudio` bằng lệnh:
     >
     > ```
