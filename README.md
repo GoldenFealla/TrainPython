@@ -18,7 +18,7 @@
 
 ### 2.4. Thực hành với các bài tập
 
-## Buổi 3: [Giới thiệu về AI và Chuẩn bị Dataset, Environment](Buổi%203/Buổi%203.md)
+## [Buổi 3: Giới thiệu về AI và Chuẩn bị Dataset, Environment](Buổi%203/Buổi%203.md)
 
 ### 3.1. Giới thiệu về AI
 

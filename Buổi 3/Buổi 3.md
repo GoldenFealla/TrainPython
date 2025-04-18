@@ -110,9 +110,9 @@
 
     ![Cài đặt Pytorch](Buổi%203%20Ảnh%2012.gif)
 
-  > [!NOTE]
-  >
-  > Khuyến khích sử dụng GPU để tăng hiệu suất Training
+> [!NOTE]
+>
+> Khuyến khích sử dụng GPU để tăng hiệu suất Training
 
   - Tạo một file tên bất kỳ (Ở đây là `main.py`) để test Pytorch
 
@@ -144,16 +144,16 @@
 
       ![Test Pytorch 2](Buổi%203%20Ảnh%2016.png)
 
-    > [!NOTE]
-    >
-    > Nếu lỡ cài bằng lệnh chỉ cho CPU thì cài bài có GPU bằng cách gỡ `torch` `torchvision` `torchaudio` bằng lệnh:
-    >
-    > ```
-    > pip3 uninstall torch torchvision torchaudio
-    > ```
-    >
-    > Sau đó dùng lệnh cài đặt có GPU như bình thường
-    >
-    > ```
-    > pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
-    > ```
+> [!NOTE]
+>
+> Nếu lỡ cài bằng lệnh chỉ cho CPU thì cài bài có GPU bằng cách gỡ `torch` `torchvision` `torchaudio` bằng lệnh:
+>
+> ```
+> pip3 uninstall torch torchvision torchaudio
+> ```
+>
+> Sau đó dùng lệnh cài đặt có GPU như bình thường
+>
+> ```
+> pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+> ```
