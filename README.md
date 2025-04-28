@@ -24,6 +24,4 @@
 
 ### 3.2. Chuẩn bị Dataset, Environment
 
-## Buổi 4: Xây dựng mô hình và huấn luyện
-
-## Buổi 5: Đánh giá mô hình và dự đoán
+## [Buổi 4 & 5: Thực hành huấn luyện mô hình phân biệt có phải là Pizza](Buổi%204%20&%205/Buổi%204%20&%205.md)
